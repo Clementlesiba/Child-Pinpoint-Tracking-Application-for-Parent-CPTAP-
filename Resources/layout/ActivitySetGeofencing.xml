@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/cRootLayoutGeo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+      <Button
+        android:text="Get Current"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "80dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_button_borders"
+        android:textColor = "#ffffff"
+        android:id="@+id/btnGetCurrentLocation"
+        app:menu="@menu/navigation"/>
+
+        <TextView
+            android:hint = "Latitude"
+            android:layout_width="310dp"
+            android:gravity = "center"
+            android:layout_gravity = "center"
+            android:layout_height="50dp"
+            android:layout_marginTop = "25dp"
+            android:background = "@drawable/edit_text_border"
+            android:id="@+id/txtLatitude" />
+        <TextView
+            android:hint = "Longitude"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:gravity = "center"
+            android:layout_gravity = "center"
+            android:layout_marginTop = "25dp"
+            android:background = "@drawable/edit_text_border"
+            android:id="@+id/txtLongitude" />
+
+    <EditText
+        android:inputType = "number"
+        android:layout_width="310dp"
+        android:gravity = "center"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop = "25dp"
+        android:hint = "Radius (M)"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtRadius" />
+
+    <Button
+        android:text="Add Geofencing"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "50dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_button_borders"
+        android:textColor = "#ffffff"
+        android:id="@+id/btnAddGeofencing"
+        app:menu="@menu/navigation"/>
+</LinearLayout>
+<RelativeLayout 
+
+    android:id="@+id/containerGeo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#486480"
+        app:itemIconTint="@drawable/menuselector"
+        app:itemTextColor="@drawable/menuselector"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        app:labelVisibilityMode = "labeled"/>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

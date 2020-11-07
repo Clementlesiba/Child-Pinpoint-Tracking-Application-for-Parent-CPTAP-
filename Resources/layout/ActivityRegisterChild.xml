@@ -1,0 +1,104 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/cRootLayoutChild"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+
+    <EditText
+        android:inputType="textPersonName"
+        android:importantForAutofill ="no"
+        android:layout_width="310dp"
+        android:gravity = "center"
+       android:layout_height="50dp"
+        android:hint = "Name"
+        android:layout_marginTop = "60dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtPersonNameChild" />
+    <EditText
+        android:inputType="textPersonName"
+        android:importantForAutofill ="no"
+        android:layout_width="310dp"
+        android:gravity = "center"
+        android:layout_height="50dp"
+        android:hint = "Surname"
+        android:layout_marginTop = "25dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtPersonSurnameChild" />
+    <EditText
+        android:inputType = "textEmailAddress"
+        android:importantForAutofill ="no"
+        android:layout_width="310dp"
+        android:gravity = "center"
+        android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop = "25dp"
+        android:hint = "Email"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtUsernameChild" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="310dp"
+        android:gravity = "center"
+       android:layout_height="50dp"
+        android:hint = "Password"
+        android:layout_marginTop = "25dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtPasswordChild" />
+          <EditText
+        android:inputType="textPassword"
+        android:layout_width="310dp"
+        android:gravity = "center"
+       android:layout_height="50dp"
+        android:hint = "confirm Password"
+        android:layout_marginTop = "25dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:id="@+id/txtconfirmPasswordChild" />
+
+    <Button
+        android:text="Add Child"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "50dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_button_borders"
+        android:textColor = "#ffffff"
+        android:id="@+id/btnRegisterChild"
+        app:menu="@menu/navigation"/>
+</LinearLayout>
+
+<RelativeLayout 
+
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#486480"
+        app:itemIconTint="@drawable/menuselector"
+        app:itemTextColor="@drawable/menuselector"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        app:labelVisibilityMode = "labeled"/>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

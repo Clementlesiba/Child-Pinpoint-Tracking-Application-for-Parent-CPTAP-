@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@color/tooltip_background_light"/>
+      <stroke
+          android:color="#486480"
+          android:width="3dp"
+                />
+      <corners android:radius="7dp"/>
+    </shape>
+  </item>
+</selector>

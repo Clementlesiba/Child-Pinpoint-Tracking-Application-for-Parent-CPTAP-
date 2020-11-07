@@ -1,0 +1,63 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/cRootLayoutLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <EditText
+        android:inputType = "textEmailAddress"
+         android:importantForAutofill ="no"
+         android:layout_width="310dp"
+       android:layout_height="50dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:hint = "Email"
+        android:layout_marginTop = "150dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:gravity ="center"
+        android:id="@+id/txtLoginUsername" />
+    <EditText
+        android:inputType="textPassword"
+         android:importantForAutofill ="no"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:hint = "Password"
+        android:layout_marginTop = "25dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_text_border"
+        android:gravity ="center"
+        android:id="@+id/txtLoginPassword" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop = "50dp"
+        android:layout_gravity = "center"
+        android:background = "@drawable/edit_button_borders"
+        android:textColor = "#ffffff"
+        android:id="@+id/btnLogin" />
+
+         <Button
+            android:text="Register"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop = "25dp"
+            android:layout_marginRight = "25dp"
+            android:layout_gravity = "right"
+            android:background = "@android:color/transparent"
+            android:textColor = "#87CEEB"
+            android:id="@+id/btnRegisterHere" />
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
